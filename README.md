@@ -2,15 +2,17 @@
 A quick extractor for NSFileWrapper serialized archives.
 ##Utilisation
 To extract the archive at path `i_am_a/path/to_the/archive`, use
-  
-  SRDeserializer deSer = new SRDeserializer("i_am_a/path/to_the", "archive");
+	
+	SRDeserializer deSer = new SRDeserializer("i_am_a/path/to_the", "archive");
 	if(!deSer.deserialize()){
-	  //Error
+	//Error
 	}
 	//Success
 	
 No guarantee of efficiency or safety,.... This is completely dependant of the current private implementation of NSFilewrapper serializedRepresentation method by Apple.
+
 More info on SRDeserializer : [blog article](http://blog.simonrodriguez.fr/articles/06-09-2015_nsfilewrapper_serializedrepresentation.html)
+
 More info on NSFileWrapper : [developer documentation](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSFileWrapper_Class/)
 
 ##License
