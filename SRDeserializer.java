@@ -22,7 +22,7 @@ public class SRDeserializer {
 	
 	/**
 	 * Initialisation : create a SRDeserializer for the file given in argument.
-	 * @param directorythe directory containing the archive file to extract
+	 * @param directory the directory containing the archive file to extract
 	 * @param filename the name of the archive file to extract
 	 */
 	public SRDeserializer(String directory, String filename) {
@@ -35,6 +35,7 @@ public class SRDeserializer {
 	}
 	
 	/**
+	 * Starts the deserialization of the whole archive.
 	 * @return a boolean denoting the success of the deserialization
 	 */
 	public boolean deserialize(){
@@ -67,6 +68,7 @@ public class SRDeserializer {
 	}
 	
 	/**
+	 * Extracts all elements of the given SRFile directory at the destination directory that should contains the extracted hierarchy, recursively.
 	 * @param file the SRFile representing the directory to extract
 	 * @param destination the destination where the directory should be extracted
 	 * @return a boolean denoting the success of the deserialization
@@ -131,6 +133,7 @@ public class SRDeserializer {
 	}
 	
 	/**
+	 * Reads the binary content of the file represented by the SRFile file and writes it to the given destination.
 	 * @return a boolean denoting the success of the writing operation
 	 * @throws IOException when an error is encountered whhile writing the file on the host filesystem
 	 */
